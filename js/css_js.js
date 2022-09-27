@@ -1,6 +1,6 @@
 function onclick_color(style,weaponID) {
 
-    if (document.getElementById(weaponID).style.background=="rgb(255, 165, 0)"){
+    if (document.getElementById(weaponID).style.background == "lightsteelblue"){
 
         button= document.getElementById(weaponID);
         button.style.background = "#ffffff";
@@ -9,7 +9,7 @@ function onclick_color(style,weaponID) {
 
     else{
         button= document.getElementById(weaponID);
-        button.style.background = "#ffa500";
+        button.style.background = "lightsteelblue";
     }
     
 }
