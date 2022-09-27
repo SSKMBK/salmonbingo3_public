@@ -12,7 +12,7 @@ function savebutton(){
 		list_message+=savedata+",";
 	}
 
-        localStorage.setItem('salmonrandomweapondata_storage', JSON.stringify(local_list))
+        localStorage.setItem('salmonrandomweapondataNW_storage', JSON.stringify(local_list))
         document.getElementById("save_weapondata").innerHTML=list_message;
 
     }
@@ -26,7 +26,7 @@ function restorationbutton(){
     
     if(window.confirm("現在の入力内容は上書きされます。")){
 
-        var storagedata=JSON.parse(localStorage.getItem('salmonrandomweapondata_storage'))
+        var storagedata=JSON.parse(localStorage.getItem('salmonrandomweapondataNW_storage'))
 
 	for(i=0;i<24;i++){
 	var storageweapon=document.createTextNode(storagedata[i])
@@ -40,7 +40,7 @@ function restorationbutton(){
 function deletebutton(){
     if(window.confirm("本当に保存データを削除しますか？")){
 
-        localStorage.removeItem("salmonrandomweapondata_storage")
+        localStorage.removeItem("salmonrandomweapondataNW_storage")
         document.getElementById("save_weapondata").innerHTML="削除しました";
 
     }
