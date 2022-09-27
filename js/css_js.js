@@ -1,15 +1,17 @@
 function onclick_color(style,weaponID) {
 
-    if (document.getElementById(weaponID).style.background == "lightsteelblue"){
+    if (document.getElementById(weaponID).style.background == "cornflowerblue"){
 
         button= document.getElementById(weaponID);
         button.style.background = "#ffffff";
+        button.style.color="black";
 
     }
 
     else{
         button= document.getElementById(weaponID);
-        button.style.background = "lightsteelblue";
+        button.style.background = "cornflowerblue";
+        button.style.color="white";
     }
     
 }
